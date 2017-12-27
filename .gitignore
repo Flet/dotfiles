@@ -1,0 +1,11 @@
+sublime/sublime-text-3.configsymlink/Packages/*
+!sublime/sublime-text-3.configsymlink/Packages/User
+sublime/sublime-text-3.configsymlink/Packages/User/Package\ Control.cache
+sublime/sublime-text-3.configsymlink/Installed\ Packages
+sublime/sublime-text-3.configsymlink/Cache
+sublime/sublime-text-3.configsymlink/Index
+sublime/sublime-text-3.configsymlink/Local
+sublime/sublime-text-3.configsymlink/Packages/User/Package Control.last-run
+sublime/sublime-text-3.configsymlink/Packages/User/bh_unicode_properties.cache
+node/npm-debug.log
+sublime/sublime-text-3.configsymlink/Backup/*

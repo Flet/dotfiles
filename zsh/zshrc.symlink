@@ -1,0 +1,38 @@
+fpath=( "$HOME/.zfunctions" $fpath )
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory autocd extendedglob
+# End of lines configured by zsh-newuser-install
+
+autoload -U promptinit && promptinit
+
+source ~/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle lein
+antigen bundle command-not-found
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+
+ln -sf ~/.antigen/bundles/sindresorhus/pure/async.zsh ~/.zfunctions/async
+ln -sf ~/.antigen/bundles/sindresorhus/pure/pure.zsh ~/.zfunctions/prompt_pure_setup
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Tell antigen that you're done.
+antigen apply
+
+fpath+=('/home/flet/.nvm/versions/node/v8.9.3/lib/node_modules/pure-prompt/functions')
+PURE_PROMPT_SYMBOL=❯
+prompt pure
