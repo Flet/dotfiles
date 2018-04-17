@@ -5,7 +5,7 @@
 set -e
 
 # install essential things like curl and apt-add-repository
-sudo apt-get install git meld gitk ttf-ancient-fonts curl software-properties-common python-software-properties python-flake8 -y
+sudo apt-get install git meld gitk ttf-ancient-fonts curl software-properties-common python-flake8 -y
 
 # Install git ppa
 sudo add-apt-repository ppa:git-core/ppa -y
